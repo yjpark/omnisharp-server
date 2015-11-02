@@ -124,7 +124,7 @@ namespace OmniSharp
                                         new NativeFileSystem(), 
                                         logger), 
                                     new HostConfiguration{ RewriteLocalhost = false }, 
-                                    new Uri("http://localhost:" + port));
+                                    new Uri("http://127.0.0.1:" + port));
 
                 nancyHost.Start();
                 logger.Debug("OmniSharp server is listening");
